@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --container-width: 100%;
+}
+
+.container {
+  width: var(--container-width);
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+@media (min-width: 375px) {
+  :root {
+    --container-width: 375px;
+  }
+
+  @media (min-width: 768px) {
+    :root {
+      --container-width: 768px;
+    }
+    .container {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --container-width: 1200px;
+  }
+}

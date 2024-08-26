@@ -1,5 +1,6 @@
 import React from 'react';
 import '@/app/globals.css';
+import { roboto } from '@/app/ui/fonts';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
@@ -10,15 +11,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-neutral-200">
-        <header>
-          <Header />
-        </header>
+      <body
+        className={`${roboto.className} antialiased flex min-h-screen flex-col p-6 container`}
+      >
+        <Header />
         {children}
-        <footer>
-          <Footer />
-        </footer>
+        <Footer />
       </body>
     </html>
   );
 }
+
+// className = 'flex min-h-screen flex-col p-6';
