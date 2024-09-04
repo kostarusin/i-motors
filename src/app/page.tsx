@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col pb-6 pt-6">
-      <div className="">
+      {/* <div className="">
         <div className="flex items-center justify-center">
           <h1 className="text-teal-700 text-3xl font-semibold auto align-text-center mb-10">
             i-motors-homepage
@@ -94,21 +94,8 @@ export default function Page() {
             tempore doloremque!
           </p>
         </div>
-        {/* <Image
-          src="/hero-desktop.jpg"
-          width={1000}
-          height={760}
-          className="hidden md:block"
-          alt="Screenshots of the dashboard project showing desktop version"
-        /> */}
-        {/* <Image
-          src="/hero-mobile.jpg"
-          width={560}
-          height={620}
-          className="block md:hidden"
-          alt="Screenshot of the dashboard project showing mobile version"
-        /> */}
-      </div>
+      
+      </div> */}
     </main>
   );
 }

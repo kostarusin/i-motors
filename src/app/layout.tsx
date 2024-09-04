@@ -3,6 +3,7 @@ import '@/app/globals.css';
 import { roboto } from '@/app/ui/fonts';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import Example from './components/Example';
 
 export default function RootLayout({
   children,
@@ -11,15 +12,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`${roboto.className} antialiased flex min-h-screen flex-col p-6 container`}
-      >
-        <Header />
-        {children}
-        <Footer />
+      <body className="">
+        <Example />
+        {/* <div
+          className={`${roboto.className} antialiased flex min-h-screen flex-col container mx-auto p-6 `}
+        >
+          <Header />
+          {children}
+          <Footer />
+        </div> */}
       </body>
     </html>
   );
 }
-
-// className = 'flex min-h-screen flex-col p-6';

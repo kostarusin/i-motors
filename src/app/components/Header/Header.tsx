@@ -9,8 +9,8 @@ export interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = () => {
   return (
-    <header className="">
-      <div className="flex items-center justify-between p-6 rounded-lg bg-slate-100">
+    <header className="sticky top-6 z-10">
+      <div className="flex items-center justify-between pt-2 pb-2 pr-4 pl-4 rounded-lg bg-slate-100 shadow-md">
         <Logo />
         <Navi />
         <UserNav />
