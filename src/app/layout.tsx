@@ -12,16 +12,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="">
-        <Example />
-        {/* <div
-          className={`${roboto.className} antialiased flex min-h-screen flex-col container mx-auto p-6 `}
-        >
+      <body>
+        {/* <Example /> */}
+        <div>
           <Header />
           {children}
           <Footer />
-        </div> */}
+        </div>
       </body>
     </html>
   );
 }
+
+//className={`${roboto.className} antialiased flex min-h-screen flex-col container mx-auto p-6 `}

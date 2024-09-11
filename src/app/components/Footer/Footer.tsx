@@ -4,9 +4,9 @@ export interface FooterProps {}
 
 const Footer: React.FC<FooterProps> = () => {
   return (
-    <footer className="">
-      <div className="flex items-center justify-between p-6 rounded-lg bg-slate-100">
-        <p>Footer</p>
+    <footer className="bg-gray-600 text-white py-4">
+      <div className="container mx-auto text-center">
+        <p>&copy; 2024 I-MOTORS. All rights reserved.</p>
       </div>
     </footer>
   );
