@@ -2,16 +2,16 @@
 
 import React from 'react';
 import Navi from './MainNavi';
-import Logo from './Logo';
-import UserNav from './UserNav';
+// import Logo from './Logo';
+// import UserNav from './UserNav';
 
-const navigation = [
-  { name: 'Home', href: '/' },
-  { name: 'Mietwerkstatt', href: '/rental' },
-  { name: 'Autoteile', href: '/shop' },
-  { name: 'Kontakte', href: '/contacts' },
-  { name: 'Impressum', href: '/information' },
-];
+// const navigation = [
+//   { name: 'Home', href: '/' },
+//   { name: 'Mietwerkstatt', href: '/rental' },
+//   { name: 'Autoteile', href: '/shop' },
+//   { name: 'Kontakte', href: '/contacts' },
+//   { name: 'Impressum', href: '/information' },
+// ];
 
 export interface HeaderProps {
   // Define any props for the Header component here, if needed.

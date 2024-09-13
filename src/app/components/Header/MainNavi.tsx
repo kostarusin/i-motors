@@ -12,7 +12,7 @@ import clsx from 'clsx';
 //   InformationCircleIcon,
 // } from '@heroicons/react/24/solid';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import { Dialog, DialogPanel } from '@headlessui/react';
+import { Dialog, DialogPanel, DialogBackdrop } from '@headlessui/react';
 
 const navigation = [
   { name: 'Home', href: '/' },
@@ -28,11 +28,11 @@ export default function Navi() {
   return (
     <nav
       aria-label="Global"
-      className="flex items-center justify-between p-6 lg:px-8"
+      className="flex items-center justify-between p-4 lg:px-8"
     >
       <div className="flex lg:flex-1">
         <Link href="/" className="-m-1.5 p-1.5">
-          <span className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900">
+          <span className="-mx-3 block rounded-lg px-3 py-2 text-xl font-bold leading-7 text-gray-900">
             I-MOTORS
           </span>
           {/* <img
@@ -49,7 +49,7 @@ export default function Navi() {
           className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
         >
           <span className="sr-only">Open main menu</span>
-          <Bars3Icon aria-hidden="true" className="h-6 w-6" />
+          <Bars3Icon aria-hidden="true" className="h-10 w-10" />
         </button>
       </div>
       <div className="hidden lg:flex lg:gap-x-12">
@@ -57,7 +57,7 @@ export default function Navi() {
           <Link
             key={item.name}
             href={item.href}
-            className={clsx('text-sm font-semibold leading-6 text-gray-900', {
+            className={clsx('text-lg font-semibold leading-6 text-gray-900', {
               'text-yellow-600 underline': pathname === item.href,
             })}
           >
@@ -66,17 +66,22 @@ export default function Navi() {
         ))}
       </div>
       <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+        <a href="#" className="text-lg font-semibold leading-6 text-gray-900">
           Log in <span aria-hidden="true">&rarr;</span>
         </a>
       </div>
       <Dialog
         open={mobileMenuOpen}
         onClose={setMobileMenuOpen}
-        className="lg:hidden"
+        transition
+        className="lg:hidden transition duration-300 ease-out data-[closed]:opacity-0"
       >
-        <div className="fixed inset-0 z-50" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <DialogBackdrop className="fixed inset-0 bg-black/30" />
+        <div className="fixed inset-0 z-50 " />
+        <DialogPanel
+          className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto
+         bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+        >
           <div className="flex items-center justify-between">
             <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">I-MOTORS</span>
@@ -92,7 +97,7 @@ export default function Navi() {
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
             >
               <span className="sr-only">Close menu</span>
-              <XMarkIcon aria-hidden="true" className="h-6 w-6" />
+              <XMarkIcon aria-hidden="true" className="h-10 w-10" />
             </button>
           </div>
           <div className="mt-6 flow-root">
@@ -100,6 +105,7 @@ export default function Navi() {
               <div className="space-y-2 py-6">
                 {navigation.map((item) => (
                   <Link
+                    onClick={() => setMobileMenuOpen(false)}
                     key={item.name}
                     href={item.href}
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
