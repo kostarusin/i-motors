@@ -32,7 +32,7 @@ export default function Navi() {
     >
       <div className="flex lg:flex-1">
         <Link href="/" className="-m-1.5 p-1.5">
-          <span className="-mx-3 block rounded-lg px-3 py-2 text-xl font-bold leading-7 text-gray-900">
+          <span className="-mx-3 block rounded-lg px-3 py-2 text-xl font-bold leading-7 text-gray-700">
             I-MOTORS
           </span>
           {/* <img
@@ -57,16 +57,19 @@ export default function Navi() {
           <Link
             key={item.name}
             href={item.href}
-            className={clsx('text-lg font-semibold leading-6 text-gray-900', {
-              'text-yellow-600 underline': pathname === item.href,
-            })}
+            className={clsx(
+              'text-lg font-medium leading-6 text-gray-800 hover:text-green-500 transition-all duration-300',
+              {
+                'text-green-500 underline': pathname === item.href,
+              }
+            )}
           >
             {item.name}
           </Link>
         ))}
       </div>
       <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="#" className="text-lg font-semibold leading-6 text-gray-900">
+        <a href="#" className="text-lg font-semibold leading-6 text-gray-700">
           Log in <span aria-hidden="true">&rarr;</span>
         </a>
       </div>
@@ -83,14 +86,15 @@ export default function Navi() {
          bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
         >
           <div className="flex items-center justify-between">
-            <a href="/" className="-m-1.5 p-1.5">
-              <span className="sr-only">I-MOTORS</span>
-              {/* <img
-                  alt=""
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                  className="h-8 w-auto"
-                /> */}
-            </a>
+            <Link
+              onClick={() => setMobileMenuOpen(false)}
+              href="/"
+              className="-m-1.5 p-1.5"
+            >
+              <span className="text-xl font-bold leading-7 text-gray-700">
+                I-MOTORS
+              </span>
+            </Link>
             <button
               type="button"
               onClick={() => setMobileMenuOpen(false)}
@@ -108,7 +112,7 @@ export default function Navi() {
                     onClick={() => setMobileMenuOpen(false)}
                     key={item.name}
                     href={item.href}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold leading-7 text-gray-700 hover:bg-gray-50"
                   >
                     {item.name}
                   </Link>
@@ -117,7 +121,7 @@ export default function Navi() {
               <div className="py-6">
                 <Link
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2.5 text-lg font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Log in
                 </Link>
