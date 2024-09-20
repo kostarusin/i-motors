@@ -14,7 +14,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <head>
         <title>I-MOTORS | Mietwerkstatt und Autoteile in Recklinghausen</title>
-        <link rel="canonical" href="https://i-motors/werk.de/" />
+        <link rel="canonical" href="https://i-motors-werk.de/" />
         <meta
           name="description"
           content="I-MOTORS bietet dir alles, was du für dein Auto brauchst, aus einer Hand. Egal ob Mietwerkstatt, Autoteile oder Werkzeuge, wir haben alles, um dein Auto in Schuss zu halten."
@@ -32,7 +32,7 @@ export default function RootLayout({
           content="Alles für dein Auto in Recklinghausen - Mietwerkstatt, Werkzeuge, und mehr!"
         />
         <meta property="og:image" content="/og-image.jpg" />
-        <meta property="og:url" content="https://i-motors/werk.de/" />
+        <meta property="og:url" content="https://i-motors-werk.de/" />
         <meta name="twitter:card" content="summary_large_image" />
       </head>
       <body>
