@@ -7,7 +7,7 @@ const images: string[] = [
   '/transport-3175766.jpg',
 ];
 
-const Slideshow: React.FC = () => {
+const HomepageSlideshow: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
 
   // Auto change the slide every 5 seconds
@@ -41,4 +41,4 @@ const Slideshow: React.FC = () => {
   );
 };
 
-export default Slideshow;
+export default HomepageSlideshow;

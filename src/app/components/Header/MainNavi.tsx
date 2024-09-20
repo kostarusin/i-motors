@@ -32,7 +32,7 @@ export default function Navi() {
     >
       <div className="flex lg:flex-1">
         <Link href="/" className="-m-1.5 p-1.5">
-          <span className="-mx-3 block rounded-lg px-3 py-2 text-xl font-bold leading-7 text-gray-700">
+          <span className="-mx-3 block rounded-lg px-3 py-2 text-xl italic font-bold leading-7 text-gray-700">
             I-MOTORS
           </span>
           {/* <img
