@@ -1,4 +1,4 @@
-// 'use client';
+'use client';
 import Slideshow from './components/HomepageSlideshow';
 import SearchInput from './components/SearchInput';
 import ImageHomepageSection from './components/HomePageImages';
@@ -8,7 +8,7 @@ export default function Page() {
   return (
     <main className="flex-grow">
       <div className="relative h-screen w-full">
-        {/* <Slideshow /> */}
+        <Slideshow />
         <div className="absolute inset-0 bg-black opacity-65 z-10"></div>{' '}
         <div className="relative z-20 flex flex-col items-center justify-center h-full">
           <div className="px-6 lg:px-8 text-center">
