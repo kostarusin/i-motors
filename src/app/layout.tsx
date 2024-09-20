@@ -12,8 +12,31 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <title>i-motors</title>
-      <meta name="i-motors" content="mietwerkstatt in Recklinghausen" />
+      <head>
+        <title>I-MOTORS | Mietwerkstatt und Autoteile in Recklinghausen</title>
+        <meta
+          name="description"
+          content="I-MOTORS bietet dir alles, was du für dein Auto brauchst, aus einer Hand. Egal ob Mietwerkstatt, Autoteile oder Werkzeuge, wir haben alles, um dein Auto in Schuss zu halten."
+        />
+        <meta
+          name="keywords"
+          content="Mietwerkstatt, Autoteile, Werkzeuge, Auto Reparatur, Recklinghausen, Hebebühne"
+        />
+        <meta
+          property="og:title"
+          content="I-MOTORS - Mietwerkstatt und Autoteile"
+        />
+        <meta
+          property="og:description"
+          content="Alles für dein Auto in Recklinghausen - Mietwerkstatt, Werkzeuge, und mehr!"
+        />
+        <meta property="og:image" content="/og-image.jpg" />
+        <meta
+          property="og:url"
+          content="https://https://i-motors.vercel.app/"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+      </head>
       <body>
         {/* <Example /> */}
         <div>
