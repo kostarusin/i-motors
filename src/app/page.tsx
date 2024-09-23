@@ -1,23 +1,32 @@
-'use client';
-import Slideshow from './components/HomepageSlideshow';
-import SearchInput from './components/SearchInput';
+// 'use client';
+// import Slideshow from './components/HomepageSlideshow';
+// import SearchInput from './components/SearchInput';
 import ImageHomepageSection from './components/HomePageImages';
 import Image from 'next/image';
 
 export default function Page() {
   return (
     <main className="flex-grow">
-      <div className="relative h-screen w-full">
-        <Slideshow />
+      {/* <div className="relative h-screen w-full"> */}
+      <div
+        className="relative isolate px-6 lg:px-8 "
+        style={{
+          backgroundImage: "url('/contact-3994018.jpg')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          height: '100vh', // Adjust the height as needed
+        }}
+      >
+        {/* <Slideshow /> */}
         <div className="absolute inset-0 bg-black opacity-65 z-10"></div>{' '}
         <div className="relative z-20 flex flex-col items-center justify-center h-full">
           <div className="px-6 lg:px-8 text-center">
             <h1 className="text-4xl font-bold italic tracking-tight text-gray-200 sm:text-8xl">
               I-MOTORS
             </h1>
-            <p className="pt-4 text-2xl font-bold tracking-tight text-gray-200 sm:text-4xl">
+            <h2 className="pt-4 text-2xl font-bold tracking-tight text-gray-200 sm:text-4xl">
               Mietwerkstatt & Autoteile
-            </p>
+            </h2>
             <p className="mt-6 text-2xl leading-8 text-green-500">
               Alles für dein Auto in Stadt Recklinghausen - Mietwerkstatt,
               Werkzeuge, Teile, und aus einer Hand!
@@ -34,9 +43,7 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <section className="bg-gray-200 py-16 grid gap-16 ">
-        <ImageHomepageSection />
-      </section>
+
       <section
         id="information"
         className="bg-gray-200 py-12 px-6 flex flex-col gap-4 lg:flex-row lg:gap-4"
@@ -145,7 +152,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="bg-gray-200 py-16 grid gap-16 ">
+      <section className="bg-gray-200 pb-12 px-6 flex flex-wrap justify-center items-center gap-4 md:justify-center md:gap-12 xl:gap-4">
         <ImageHomepageSection />
       </section>
     </main>

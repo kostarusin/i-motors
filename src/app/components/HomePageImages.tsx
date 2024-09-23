@@ -5,14 +5,13 @@ const images: string[] = [
   '/antique-car-4804725.jpg',
   '/automobile-3230876.jpg',
   '/workshop-97.jpg',
-  '/tuv-3206059.jpg',
 ];
 
 const HomePageImages: React.FC = () => {
   return (
-    <div className="relative mx-auto flex gap-10 max-w-7xl h-full lg:px-8">
+    <>
       {images.map((src: string, index: number) => (
-        <div key={index} className="relative w-56 h-56">
+        <div key={index} className="relative w-80 h-72">
           {' '}
           {/* Adjust height as needed */}
           <Image
@@ -24,7 +23,7 @@ const HomePageImages: React.FC = () => {
           />
         </div>
       ))}
-    </div>
+    </>
   );
 };
 
