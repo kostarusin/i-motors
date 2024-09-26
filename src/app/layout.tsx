@@ -1,6 +1,7 @@
 import React from 'react';
 import '@/app/globals.css';
 import { roboto } from '@/app/ui/fonts';
+import Script from 'next/script';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Example from './components/Example';
@@ -42,6 +43,13 @@ export default function RootLayout({
           {children}
           <Footer />
         </div>
+        <Script
+          id="Cookiebot"
+          src="https://consent.cookiebot.com/uc.js"
+          data-cbid="d27820d6-2ab6-4612-92a8-b4ba7cd7b77c"
+          data-blockingmode="auto"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
