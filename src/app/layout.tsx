@@ -44,11 +44,8 @@ export default function RootLayout({
           <Footer />
         </div>
         <Script
-          id="Cookiebot"
-          src="https://consent.cookiebot.com/uc.js"
-          data-cbid="d27820d6-2ab6-4612-92a8-b4ba7cd7b77c"
-          data-blockingmode="auto"
-          strategy="afterInteractive"
+          src="https://cloud.ccm19.de/app.js?apiKey=4e10d00fe660c3fdbba07414f84807e00536e5d507b29245&amp;domain=66f591068532bcb55f055562&amp;lang=de_DE"
+          referrerPolicy="origin"
         />
       </body>
     </html>
