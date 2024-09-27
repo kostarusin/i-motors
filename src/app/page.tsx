@@ -11,7 +11,7 @@ export default function Page() {
       <div
         className="relative isolate px-6 lg:px-8 "
         style={{
-          backgroundImage: "url('/contact-3994018.jpg')",
+          backgroundImage: "url('/antique-car-4804725.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           height: '100vh', // Adjust the height as needed
