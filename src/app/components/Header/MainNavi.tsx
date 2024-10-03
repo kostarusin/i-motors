@@ -18,7 +18,8 @@ const navigation = [
   { name: 'Home', href: '/' },
   { name: 'Mietwerkstatt', href: '/rental' },
   { name: 'Autoteile', href: '/shop' },
-  { name: 'Kontakte', href: '/contacts' },
+  { name: 'Autoschrottplatz', href: '/carsdismanting' },
+  { name: 'Kontakte', href: '/#contacts' },
   { name: 'Impressum', href: '/information' },
 ];
 

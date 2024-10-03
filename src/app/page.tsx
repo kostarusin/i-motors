@@ -7,7 +7,6 @@ import Image from 'next/image';
 export default function Page() {
   return (
     <main className="flex-grow">
-      {/* <div className="relative h-screen w-full"> */}
       <div
         className="relative isolate px-6 lg:px-8 "
         style={{
@@ -43,35 +42,45 @@ export default function Page() {
           </div>
         </div>
       </div>
-
       <section
         id="information"
-        className="bg-gray-200 py-12 px-6 flex flex-col gap-4 lg:flex-row lg:gap-4"
+        className="bg-gray-200 py-12 px-6 flex flex-col gap-8 lg:flex-row lg:gap-4"
       >
-        {/* Mietwerkstatt */}
+        {/* Card 1: Mietwerkstatt */}
         <div className="flex-1 max-w-full mx-auto">
-          <div className="bg-white p-4 rounded-xl shadow-xl h-full flex flex-col justify-between">
-            <div>
+          <div className="bg-white rounded-xl shadow-xl h-full flex flex-col justify-between">
+            <div className="relative w-full h-64">
+              <Image
+                src="/automobile-3230876.jpg"
+                alt="Mietwerkstatt"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-t-xl"
+              />
+            </div>
+            <div className="p-6 flex-grow">
               <h2 className="text-3xl font-bold text-center text-gray-800">
                 Mietwerkstatt
               </h2>
+              <h3 className="mt-4 text-xl font-bold text-center text-gray-800">
+                Schrauben leicht gemacht!
+              </h3>
               <p className="mt-4 text-lg text-gray-600">
-                I-MOTORS bietet dir alles, was du für dein Auto brauchst, aus
-                einer Hand. Egal ob Mietwerkstatt, Autoteile oder Werkzeuge, wir
-                haben alles, um dein Auto in Schuss zu halten.
+                Sie möchten selbst Hand an Ihr Auto legen, aber Ihnen fehlt das
+                richtige Werkzeug oder der Platz? In unserer Mietwerkstatt
+                können Sie professionelle Hebebühnen, Spezialwerkzeuge und
+                Ausrüstung stundenweise oder für den ganzen Tag mieten.
               </p>
               <p className="mt-4 text-lg text-gray-600">
-                Sehr bequeme Arbeitszeiten: Montag bis Freitag von 9 bis 19 Uhr
-                und samstags von 9 bis 15 Uhr. Du kannst eine Hebebühne mit oder
-                ohne Werkzeuge für den ganzen Tag oder auch nur für eine Stunde
-                mieten.
+                Kommen Sie vorbei und nutzen Sie unsere voll ausgestattete
+                Werkstatt – Sie machen die Arbeit, wir stellen das Equipment!
               </p>
             </div>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
+            <div className="pb-6 flex items-center justify-center">
               <a
-                href="#information"
-                className="text-lg font-bold leading-6 text-yellow-400 transition-all duration-500
-            hover:text-green-300 hover:transition-all ease-in-out hover:duration-300"
+                href="/rental"
+                className="text-lg font-bold text-yellow-400 transition-all duration-500
+          hover:text-green-300 ease-in-out"
               >
                 Erfahren mehr <span aria-hidden="true">→</span>
               </a>
@@ -79,72 +88,82 @@ export default function Page() {
           </div>
         </div>
 
-        {/* Autoteile */}
+        {/* Card 2: Autoteile */}
         <div className="flex-1 max-w-full mx-auto">
-          <div className="bg-white p-4 rounded-xl shadow-xl h-full flex flex-col justify-between">
-            <div>
+          <div className="bg-white rounded-xl shadow-xl h-full flex flex-col justify-between">
+            <div className="relative w-full h-64">
+              <Image
+                src="/motor-2595269.jpg"
+                alt="Autoteile"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-t-xl"
+              />
+            </div>
+            <div className="p-6 flex-grow">
               <h2 className="text-3xl font-bold text-center text-gray-800">
                 Autoteile
               </h2>
+              <h3 className="mt-4 text-xl font-bold text-center text-gray-800">
+                Qualität zum günstigen Preis!
+              </h3>
               <p className="mt-4 text-lg text-gray-600">
-                I-MOTORS bietet dir alles, was du für dein Auto brauchst, aus
-                einer Hand. Egal ob Mietwerkstatt, Autoteile oder Werkzeuge, wir
-                haben alles, um dein Auto in Schuss zu halten.
+                Suchen Sie nach hochwertigen, geprüften Autoteilen zu fairen
+                Preisen? In unserem Geschäft für gebrauchte Autoteile finden Sie
+                eine große Auswahl an Ersatzteilen für vielen Fahrzeugmarken und
+                -modelle.
               </p>
               <p className="mt-4 text-lg text-gray-600">
-                Sehr bequeme Arbeitszeiten: Montag bis Freitag von 9 bis 19 Uhr
-                und samstags von 9 bis 15 Uhr. Du kannst eine Hebebühne mit oder
-                ohne Werkzeuge für den ganzen Tag oder auch nur für eine Stunde
-                mieten. Sehr bequeme Arbeitszeiten: Montag bis Freitag von 9 bis
-                19 Uhr und samstags von 9 bis 15 Uhr. Du kannst eine Hebebühne
-                mit oder ohne Werkzeuge für den ganzen Tag oder auch nur für
-                eine Stunde mieten. Sehr bequeme Arbeitszeiten: Montag bis
-                Freitag von 9 bis 19 Uhr und samstags von 9 bis 15 Uhr. Du
-                kannst eine Hebebühne mit oder ohne Werkzeuge für den ganzen Tag
-                oder auch nur für eine Stunde mieten.
+                Nachhaltig, preiswert und sofort verfügbar!
               </p>
             </div>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
+            <div className="pb-6 flex items-center justify-center">
               <a
-                href="#information"
-                className="text-lg font-bold leading-6 text-yellow-400 transition-all duration-500
-            hover:text-green-300 hover:transition-all ease-in-out hover:duration-300"
+                href="/shop"
+                className="text-lg font-bold text-yellow-400 transition-all duration-500
+          hover:text-green-300 ease-in-out"
               >
                 Erfahren mehr <span aria-hidden="true">→</span>
               </a>
             </div>
           </div>
         </div>
-        {/* Extra */}
+
+        {/* Card 3: Autoschrottplatz */}
         <div className="flex-1 max-w-full mx-auto">
-          <div className="bg-white p-4 rounded-xl shadow-xl h-full flex flex-col justify-between">
-            <div>
+          <div className="bg-white rounded-xl shadow-xl h-full flex flex-col justify-between">
+            <div className="relative w-full h-64">
+              <Image
+                src="/workshop-97.jpg"
+                alt="Autoschrottplatz"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-t-xl"
+              />
+            </div>
+            <div className="p-6 flex-grow">
               <h2 className="text-3xl font-bold text-center text-gray-800">
-                Extra
+                Autoschrottplatz
               </h2>
+              <h3 className="mt-4 text-xl font-bold text-center text-gray-800">
+                Selbst finden, selbst abbauen!
+              </h3>
               <p className="mt-4 text-lg text-gray-600">
-                I-MOTORS bietet dir alles, was du für dein Auto brauchst, aus
-                einer Hand. Egal ob Mietwerkstatt, Autoteile oder Werkzeuge, wir
-                haben alles, um dein Auto in Schuss zu halten.
+                Suchen, abschrauben, sparen! Entdecken Sie unsere Vielfalt an
+                Autos zum Ausschlachten und finden Sie genau das Teil, das Sie
+                brauchen.
               </p>
               <p className="mt-4 text-lg text-gray-600">
-                Sehr bequeme Arbeitszeiten: Montag bis Freitag von 9 bis 19 Uhr
-                und samstags von 9 bis 15 Uhr. Du kannst eine Hebebühne mit oder
-                ohne Werkzeuge für den ganzen Tag oder auch nur für eine Stunde
-                mieten. Sehr bequeme Arbeitszeiten: Montag bis Freitag von 9 bis
-                19 Uhr und samstags von 9 bis 15 Uhr. Du kannst eine Hebebühne
-                mit oder ohne Werkzeuge für den ganzen Tag oder auch nur für
-                eine Stunde mieten. Sehr bequeme Arbeitszeiten: Montag bis
-                Freitag von 9 bis 19 Uhr und samstags von 9 bis 15 Uhr. Du
-                kannst eine Hebebühne mit oder ohne Werkzeuge für den ganzen Tag
-                oder auch nur für eine Stunde mieten.
+                Suchen, abschrauben, sparen! Entdecken Sie unsere Vielfalt an
+                Autos zum Ausschlachten und finden Sie genau das Teil, das Sie
+                brauchen.
               </p>
             </div>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
+            <div className="pb-6 flex items-center justify-center">
               <a
-                href="#information"
-                className="text-lg font-bold leading-6 text-yellow-400 transition-all duration-500
-            hover:text-green-300 hover:transition-all ease-in-out hover:duration-300"
+                href="/carsdismanting"
+                className="text-lg font-bold text-yellow-400 transition-all duration-500
+          hover:text-green-300 ease-in-out"
               >
                 Erfahren mehr <span aria-hidden="true">→</span>
               </a>
@@ -152,6 +171,7 @@ export default function Page() {
           </div>
         </div>
       </section>
+
       <section className="bg-gray-200 pb-12 px-6 flex flex-wrap justify-center items-center gap-4 md:justify-center md:gap-12 xl:gap-4">
         <ImageHomepageSection />
       </section>

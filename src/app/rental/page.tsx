@@ -17,6 +17,9 @@ export default function Rental() {
               <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
                 Mietwerkstatt
               </h1>
+              <p className="text-white pt-10">
+                Die Seite befindet sich derzeit in Entwicklung
+              </p>
             </div>
           </div>
         </div>

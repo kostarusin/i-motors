@@ -1,10 +1,10 @@
-export default function Shop() {
+export default function Carsdismanting() {
   return (
     <main>
       <div
         className="relative isolate px-6 lg:px-8 "
         style={{
-          backgroundImage: "url('/motor-2595269.jpg')",
+          backgroundImage: "url('/auto-repair-shop-1954636.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           height: '100vh', // Adjust the height as needed
@@ -15,7 +15,7 @@ export default function Shop() {
           <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
             <div className="text-center">
               <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-                Autoteile
+                Autoschrottplatz
               </h1>
               <p className="text-white pt-10">
                 Die Seite befindet sich derzeit in Entwicklung

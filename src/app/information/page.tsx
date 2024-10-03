@@ -4,7 +4,7 @@ export default function Information() {
       <div
         className="relative isolate px-6 lg:px-8 "
         style={{
-          backgroundImage: "url('/contact-3994018.jpg')",
+          // backgroundImage: "url('/contact-3994018.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           height: '100vh', // Adjust the height as needed
@@ -17,6 +17,9 @@ export default function Information() {
               <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
                 Impressum
               </h1>
+              <p className="text-white pt-10">
+                Die Seite befindet sich derzeit in Entwicklung
+              </p>
             </div>
           </div>
         </div>

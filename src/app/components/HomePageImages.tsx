@@ -5,6 +5,10 @@ const images: string[] = [
   '/antique-car-4804725.jpg',
   '/automobile-3230876.jpg',
   '/workshop-97.jpg',
+  '/motor-2595269.jpg',
+  '/transport-3175766.jpg',
+  '/tuv-3206059.jpg',
+  '/workshop-97.jpg',
 ];
 
 const HomePageImages: React.FC = () => {
