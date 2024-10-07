@@ -1,7 +1,7 @@
 // 'use client';
 // import Slideshow from './components/HomepageSlideshow';
 // import SearchInput from './components/SearchInput';
-import ImageHomepageSection from './components/HomePageImages';
+import HomePageImages from './components/HomePageImages';
 import Image from 'next/image';
 
 export default function Page() {
@@ -173,7 +173,7 @@ export default function Page() {
       </section>
 
       <section className="bg-gray-200 pb-12 px-6 flex flex-wrap justify-center items-center gap-4 md:justify-center md:gap-12 xl:gap-4">
-        <ImageHomepageSection />
+        <HomePageImages />
       </section>
     </main>
   );
