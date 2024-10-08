@@ -13,11 +13,9 @@ const images: string[] = [
 
 const HomePageImages: React.FC = () => {
   return (
-    <>
+    <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
       {images.map((src: string, index: number) => (
-        <div key={index} className="relative w-80 h-72">
-          {' '}
-          {/* Adjust height as needed */}
+        <div key={index} className="relative w-full h-72">
           <Image
             src={src}
             alt={`Slideshow image ${index + 1}`}
@@ -27,7 +25,7 @@ const HomePageImages: React.FC = () => {
           />
         </div>
       ))}
-    </>
+    </div>
   );
 };
 

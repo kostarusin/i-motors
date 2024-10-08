@@ -1,6 +1,3 @@
-// 'use client';
-// import Slideshow from './components/HomepageSlideshow';
-// import SearchInput from './components/SearchInput';
 import HomePageImages from './components/HomePageImages';
 import Image from 'next/image';
 
@@ -16,7 +13,6 @@ export default function Page() {
           height: '100vh', // Adjust the height as needed
         }}
       >
-        {/* <Slideshow /> */}
         <div className="absolute inset-0 bg-black opacity-65 z-10"></div>{' '}
         <div className="relative z-20 flex flex-col items-center justify-center h-full">
           <div className="px-6 lg:px-8 text-center">
@@ -172,8 +168,10 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="bg-gray-200 pb-12 px-6 flex flex-wrap justify-center items-center gap-4 md:justify-center md:gap-12 xl:gap-4">
-        <HomePageImages />
+      <section className="bg-gray-200 pb-12 px-6 flex justify-center">
+        <div className=" w-full">
+          <HomePageImages />
+        </div>
       </section>
     </main>
   );
