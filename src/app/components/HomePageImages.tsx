@@ -8,7 +8,7 @@ const images: string[] = [
   '/motor-2595269.jpg',
   '/transport-3175766.jpg',
   '/tuv-3206059.jpg',
-  '/workshop-97.jpg',
+  '/imotors.jpg',
 ];
 
 const HomePageImages: React.FC = () => {

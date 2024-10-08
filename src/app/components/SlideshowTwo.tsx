@@ -2,12 +2,13 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 const images: string[] = [
-  '/antique-car-4804725.jpg',
-  '/auto-repair-shop-1954636.jpg',
+  '/motor-2595269.jpg',
   '/transport-3175766.jpg',
+  '/tuv-3206059.jpg',
+  '/imotors.jpg',
 ];
 
-const HomepageSlideshow: React.FC = () => {
+const SlideshowTwo: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
 
   // Auto change the slide every 5 seconds
@@ -20,7 +21,7 @@ const HomepageSlideshow: React.FC = () => {
   }, []);
 
   return (
-    <div className="absolute inset-0 z-0">
+    <div className="relative w-full h-full">
       {images.map((src: string, index: number) => (
         <div
           key={index}
@@ -41,4 +42,4 @@ const HomepageSlideshow: React.FC = () => {
   );
 };
 
-export default HomepageSlideshow;
+export default SlideshowTwo;
