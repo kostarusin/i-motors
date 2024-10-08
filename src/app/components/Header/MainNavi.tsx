@@ -10,7 +10,7 @@ const navigation = [
   { name: 'Mietwerkstatt', href: '/rental' },
   { name: 'Autoteile', href: '/shop' },
   { name: 'Autoschrottplatz', href: '/carsdismanting' },
-  { name: 'Kontakte', href: '/#contacts' },
+  { name: 'Kontakte', href: '#contacts' },
   { name: 'Impressum', href: '/information' },
 ];
 
@@ -32,8 +32,8 @@ export default function Navi() {
     <nav className="flex items-center justify-between p-4 lg:px-8 bg-gray-200">
       <div className="flex lg:flex-1">
         <Link href="/" className="-m-1.5 p-1.5">
-          <span className="-mx-3 block rounded-lg px-3 py-2 text-xl italic font-bold leading-7 text-gray-700">
-            I-MOTORS
+          <span className="-mx-3 block rounded-lg px-3 py-2 text-xl  font-bold leading-7 text-gray-700">
+            i-MOTORS
           </span>
         </Link>
       </div>
@@ -47,7 +47,7 @@ export default function Navi() {
           <Bars3Icon aria-hidden="true" className="h-10 w-10" />
         </button>
       </div>
-      <div className="hidden lg:flex lg:gap-x-12">
+      <div className="hidden lg:flex lg:gap-x-6 xl:gap-12">
         {navigation.map((item) => (
           <Link
             key={item.name}
@@ -81,7 +81,7 @@ export default function Navi() {
               href="/"
               className="-m-1.5 p-1.5"
             >
-              <span className="text-xl font-bold leading-7 text-gray-700">
+              <span className="text-xl font-bold leading-7 text-gray-900">
                 I-MOTORS
               </span>
             </Link>
@@ -100,12 +100,12 @@ export default function Navi() {
                 key={item.name}
                 onClick={() => setMobileMenuOpen(false)}
                 href={item.href}
-                className="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold text-gray-700 hover:bg-gray-50"
+                className="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold text-gray-700"
               >
                 {item.name}
               </Link>
             ))}
-            <div className="py-6">
+            <div className="py-6 border-t border-gray-300">
               <button
                 onClick={openModal}
                 className="-mx-3 block rounded-lg px-3 py-2.5 text-lg font-semibold text-gray-900"

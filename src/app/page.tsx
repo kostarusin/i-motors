@@ -16,8 +16,8 @@ export default function Page() {
         <div className="absolute inset-0 bg-black opacity-65 z-10"></div>{' '}
         <div className="relative z-20 flex flex-col items-center justify-center h-full">
           <div className="px-6 lg:px-8 text-center">
-            <h1 className="text-4xl font-bold italic tracking-tight text-gray-200 sm:text-8xl">
-              I-MOTORS
+            <h1 className="text-4xl font-bold tracking-tight text-gray-200 sm:text-8xl">
+              i-MOTORS
             </h1>
             <h2 className="pt-4 text-2xl font-bold tracking-tight text-gray-200 sm:text-4xl">
               Mietwerkstatt & Autoteile
