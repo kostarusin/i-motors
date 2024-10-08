@@ -4,13 +4,13 @@ export interface FooterProps {}
 
 const Footer: React.FC<FooterProps> = () => {
   return (
-    <footer className="bg-gray-800 text-gray-300 py-12" id="contacts">
+    <footer className="bg-gray-800 text-gray-300 py-12 px-6">
       <div className="container mx-auto">
         {/* Footer Columns */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
           {/* Google Maps */}
           <div>
-            <h3 className="text-lg font-semibold text-yellow-400 mb-4">
+            <h3 className="text-2xl font-semibold text-green-500 mb-4">
               Finden Sie uns
             </h3>
             <iframe
@@ -25,24 +25,35 @@ const Footer: React.FC<FooterProps> = () => {
           </div>
 
           {/* Contact Information */}
-          <div>
-            <h3 className="text-lg font-semibold text-yellow-400 mb-4">
+          <div id="contacts">
+            <h3 className="text-2xl font-semibold text-green-500 mb-4">
               Kontakte
             </h3>
-            <p>
+            <p className="pb-4">
               <strong></strong>Kärntener Str. 43, 45659 Recklinghausen
             </p>
-            <p>
+            <p className="pb-4">
               <strong></strong> +49 1782362609
             </p>
-            <p>
+            <p className="pb-4">
+              <a
+                href="https://wa.me/491782362609"
+                target="_blank"
+                className="text-yellow-400 transition-colors duration-300
+                    hover:text-green-300"
+              >
+                WhatsApp chat
+              </a>
+            </p>
+
+            <p className="pb-4">
               <strong></strong> info@i-motors-werk.de
             </p>
           </div>
 
           {/* Social Media Links */}
           <div>
-            <h3 className="text-lg font-semibold text-yellow-400 mb-4">
+            <h3 className="text-2xl font-semibold text-green-500 mb-4">
               Folgen Sie uns
             </h3>
             <ul>
@@ -50,7 +61,8 @@ const Footer: React.FC<FooterProps> = () => {
                 <a
                   href="https://www.kleinanzeigen.de/s-anzeige/hobbywerkstatt-kfz-mietwerkstatt-hebebuehne-kran-reparatur/2379287664-280-1988"
                   target="_blank"
-                  className="text-yellow-400 hover:text-yellow-500"
+                  className="text-yellow-400 transition-colors duration-300
+                    hover:text-green-300"
                 >
                   Kleinanzeigen
                 </a>
@@ -76,7 +88,7 @@ const Footer: React.FC<FooterProps> = () => {
 
         {/* Footer Bottom */}
         <div className="border-t border-gray-700 mt-8 pt-6 text-center">
-          <p>&copy; 2024 I-MOTORS. All rights reserved.</p>
+          <p>&copy; 2024 i-MOTORS. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -14,7 +14,7 @@ export default function Rental() {
           </div>
 
           {/* Info Section (50%) */}
-          <div className="w-full lg:w-1/2 bg-white px-6 lg:px-10 pt-12 lg:pt-16">
+          <div className="w-full lg:w-1/2 bg-white px-6 lg:px-10 lg:pt-8">
             <div className="mx-auto max-w-lg lg:max-w-none py-12">
               <div className="text-center lg:text-left">
                 <h1 className="text-4xl font-bold tracking-tight text-gray-800 sm:text-6xl">
@@ -68,7 +68,7 @@ export default function Rental() {
       >
         <div className="flex flex-col lg:flex-row items-start justify-between h-full">
           {/* Pricing & Hours Info (50%) */}
-          <div className="w-full lg:w-1/2 bg-white px-6 lg:px-10 pt-12 lg:pt-16">
+          <div className="w-full lg:w-1/2 bg-white px-6 lg:px-10 lg:pt-8">
             <div className="mx-auto max-w-lg lg:max-w-none py-12 lg:py-32">
               <div className="text-center lg:text-left">
                 <p className="text-green-500 text-2xl font-semibold">Preise:</p>
