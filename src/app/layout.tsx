@@ -14,6 +14,13 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        <link
+          rel="icon"
+          href="/icon?<generated>"
+          type="image/<generated>"
+          sizes="<generated>"
+        />
+
         <title>I-MOTORS | Mietwerkstatt und Autoteile in Recklinghausen</title>
         <link rel="canonical" href="https://i-motors-werk.de/" />
         <meta
@@ -37,7 +44,6 @@ export default function RootLayout({
         <meta name="twitter:card" content="summary_large_image" />
       </head>
       <body>
-        {/* <Example /> */}
         <div>
           <Header />
           {children}
@@ -51,5 +57,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-//className={`${roboto.className} antialiased flex min-h-screen flex-col container mx-auto p-6 `}

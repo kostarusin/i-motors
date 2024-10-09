@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import Image from 'next/image';
 import React, { useState } from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { Dialog, DialogPanel, DialogBackdrop } from '@headlessui/react';
@@ -31,8 +32,15 @@ export default function Navi() {
   return (
     <nav className="flex items-center justify-between p-4 lg:px-8 bg-gray-200">
       <div className="flex lg:flex-1">
-        <Link href="/" className="-m-1.5 p-1.5">
-          <span className="-mx-3 block rounded-lg px-3 py-2 text-xl  font-bold leading-7 text-gray-700">
+        <Link href="/" className="-m-1.5 p-1.5 flex items-center ">
+          {/* <Image
+            src="/logo.svg" 
+            alt="Logo"
+            width={32}
+            height={32}
+            className="" 
+          /> */}
+          <span className="-mx-3 block rounded-lg pl-2 pr-3 py-2 text-xl  font-bold leading-7 text-gray-700">
             i-MOTORS
           </span>
         </Link>

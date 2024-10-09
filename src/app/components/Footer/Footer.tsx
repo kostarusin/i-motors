@@ -1,4 +1,12 @@
 import React from 'react';
+import {
+  PhoneIcon,
+  EnvelopeIcon,
+  BuildingOfficeIcon,
+  AtSymbolIcon,
+  ChatBubbleLeftRightIcon,
+  InformationCircleIcon,
+} from '@heroicons/react/24/outline';
 
 export interface FooterProps {}
 
@@ -10,7 +18,7 @@ const Footer: React.FC<FooterProps> = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
           {/* Google Maps */}
           <div>
-            <h3 className="text-2xl font-semibold text-green-500 mb-4">
+            <h3 className="text-2xl font-semibold text-green-500 mb-8">
               Finden Sie uns
             </h3>
             <iframe
@@ -26,45 +34,77 @@ const Footer: React.FC<FooterProps> = () => {
 
           {/* Contact Information */}
           <div id="contacts">
-            <h3 className="text-2xl font-semibold text-green-500 mb-4">
+            <h3 className="text-2xl font-semibold text-center md:text-left text-green-500 mb-8">
               Kontakte
             </h3>
-            <p className="pb-4">
-              <strong></strong>Kärntener Str. 43, 45659 Recklinghausen
-            </p>
-            <p className="pb-4">
-              <strong></strong> +49 1782362609
-            </p>
-            <p className="pb-4">
-              <a
-                href="https://wa.me/491782362609"
-                target="_blank"
-                className="text-yellow-400 transition-colors duration-300
-                    hover:text-green-300"
-              >
-                WhatsApp chat
-              </a>
-            </p>
+            <ul>
+              <li className="pb-4 text-lg  transition-colors duration-300 hover:text-yellow-400">
+                <a
+                  href="https://www.google.com/maps?q=Kärntener%20Str.%2043,%2045659%20Recklinghausen"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=" flex justify-center md:justify-start"
+                >
+                  <BuildingOfficeIcon aria-hidden="true" className="h-6 w-6" />
+                  <span className="pl-4">
+                    Kärntener Str. 43, 45659 Recklinghausen
+                  </span>
+                </a>
+              </li>
+              <li className="pb-4 text-lg transition-colors duration-300 hover:text-yellow-400">
+                <a
+                  href="tel:+491782362609"
+                  className="flex justify-center md:justify-start"
+                >
+                  <PhoneIcon aria-hidden="true" className="h-6 w-6" />
+                  <span className="pl-4">+49 178 236-26-09</span>
+                </a>
+              </li>
 
-            <p className="pb-4">
-              <strong></strong> info@i-motors-werk.de
-            </p>
+              <li className="pb-4 text-lg transition-colors duration-300 hover:text-yellow-400">
+                <a
+                  href="https://wa.me/491782362609"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex justify-center md:justify-start"
+                >
+                  {' '}
+                  <ChatBubbleLeftRightIcon
+                    aria-hidden="true"
+                    className="h-6 w-6"
+                  />
+                  <span className="pl-4">WhatsApp</span>
+                </a>
+              </li>
+              <li className="pb-4 text-lg transition-colors duration-300 hover:text-yellow-400">
+                <a
+                  href="mailto:info@i-motors-werk.de"
+                  className="flex justify-center md:justify-start"
+                >
+                  <AtSymbolIcon aria-hidden="true" className="h-6 w-6" />
+                  <span className="pl-4">info@i-motors-werk.de</span>
+                </a>
+              </li>
+            </ul>
           </div>
 
           {/* Social Media Links */}
           <div>
-            <h3 className="text-2xl font-semibold text-green-500 mb-4">
+            <h3 className="text-2xl font-semibold text-center md:text-left text-green-500 mb-8">
               Folgen Sie uns
             </h3>
             <ul>
-              <li className="mb-2">
+              <li className="pb-4 text-lg transition-colors duration-300 hover:text-yellow-400">
                 <a
                   href="https://www.kleinanzeigen.de/s-anzeige/hobbywerkstatt-kfz-mietwerkstatt-hebebuehne-kran-reparatur/2379287664-280-1988"
                   target="_blank"
-                  className="text-yellow-400 transition-colors duration-300
-                    hover:text-green-300"
+                  className="flex justify-center md:justify-start"
                 >
-                  Kleinanzeigen
+                  <InformationCircleIcon
+                    aria-hidden="true"
+                    className="h-6 w-6"
+                  />
+                  <span className="pl-4">Kleinanzeigen</span>
                 </a>
               </li>
               {/* <li className="mb-2">
