@@ -11,13 +11,12 @@ const images: string[] = [
 const SlideshowOne: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
 
-  // Auto change the slide every 5 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 5000);
 
-    return () => clearInterval(interval); // Cleanup on component unmount
+    return () => clearInterval(interval);
   }, []);
 
   return (

@@ -1,11 +1,9 @@
 import React from 'react';
 import {
   PhoneIcon,
-  EnvelopeIcon,
   BuildingOfficeIcon,
   AtSymbolIcon,
   ChatBubbleLeftRightIcon,
-  InformationCircleIcon,
   ShoppingCartIcon,
 } from '@heroicons/react/24/outline';
 
@@ -105,21 +103,6 @@ const Footer: React.FC<FooterProps> = () => {
                   <span className="pl-4">Kleinanzeigen</span>
                 </a>
               </li>
-              {/* <li className="mb-2">
-                <a href="#" className="text-yellow-400 hover:text-yellow-500">
-                  WhattsApp
-                </a>
-              </li> */}
-              {/* <li className="mb-2">
-                <a href="#" className="text-yellow-400 hover:text-yellow-500">
-                  Instagram
-                </a>
-              </li> */}
-              {/* <li className="mb-2">
-                <a href="#" className="text-yellow-400 hover:text-yellow-500">
-                  LinkedIn
-                </a>
-              </li> */}
             </ul>
           </div>
         </div>

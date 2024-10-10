@@ -12,21 +12,21 @@ const navigation = [
   { name: 'Autoteile', href: '/shop' },
   { name: 'Autoschrottplatz', href: '/carsdismanting' },
   { name: 'Kontakte', href: '#contacts' },
-  { name: 'Impressum', href: '/information' },
+  // { name: 'Impressum', href: '/information' },
 ];
 
 export default function Navi() {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [isModalOpen, setModalOpen] = useState(false); // Manage modal open state
+  const [isModalOpen, setModalOpen] = useState(false);
 
   const openModal = () => {
-    setMobileMenuOpen(false); // Close mobile menu
-    setModalOpen(true); // Open the modal
+    setMobileMenuOpen(false);
+    setModalOpen(true);
   };
 
   const closeModal = () => {
-    setModalOpen(false); // Close the modal
+    setModalOpen(false);
   };
 
   return (
@@ -34,7 +34,7 @@ export default function Navi() {
       <div className="flex lg:flex-1">
         <Link href="/" className="-m-1.5 p-1.5 flex items-center ">
           <Image
-            src="/icons8-auto-service-48.png"
+            src="/headerlogo.png"
             alt="Logo"
             width={46}
             height={46}
@@ -71,7 +71,7 @@ export default function Navi() {
       <div className="hidden lg:flex lg:flex-1 lg:justify-end">
         <button
           onClick={openModal}
-          className="text-lg font-semibold leading-6 text-gray-700 hover:text-green-500 transition-all duration-300"
+          className="hidden text-lg font-semibold leading-6 text-gray-700 hover:text-green-500 transition-all duration-300"
         >
           Anmelden <span aria-hidden="true">&rarr;</span>
         </button>
@@ -116,7 +116,7 @@ export default function Navi() {
             <div className="py-6 border-t border-gray-300">
               <button
                 onClick={openModal}
-                className="-mx-3 block rounded-lg px-3 py-2.5 text-lg font-semibold text-gray-900"
+                className=" hidden -mx-3 rounded-lg px-3 py-2.5 text-lg font-semibold text-gray-900"
               >
                 Anmelden <span aria-hidden="true">&rarr;</span>
               </button>

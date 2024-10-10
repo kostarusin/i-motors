@@ -15,7 +15,7 @@ export default function Page() {
           backgroundImage: "url('/imotors.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          height: '100vh', // Adjust the height as needed
+          height: '100vh',
         }}
       >
         <div className="absolute inset-0 bg-black opacity-65 z-10"></div>{' '}
@@ -78,16 +78,17 @@ export default function Page() {
             <div className="p-6 flex-grow">
               <a
                 href="/rental"
-                className="flex justify-center items-center group hover:text-green-500"
+                className="flex justify-center items-center bg-green-500 text-white rounded-lg py-3 px-6 transition-all duration-300 group hover:bg-green-600 hover:shadow-lg"
               >
                 <WrenchIcon
                   aria-hidden="true"
-                  className="h-8 w-8 text-gray-800 group-hover:text-green-500 transition-colors duration-300"
+                  className="h-8 w-8 text-white group-hover:text-white transition-colors duration-300"
                 />
-                <h2 className="text-3xl font-bold text-center pl-4 text-gray-800 group-hover:text-green-500 transition-colors duration-300">
+                <h2 className="text-2xl font-bold text-center pl-2 group-hover:text-white transition-colors duration-300">
                   Mietwerkstatt
                 </h2>
               </a>
+
               <h3 className="mt-4 text-xl font-bold text-center text-gray-800">
                 Schrauben leicht gemacht!
               </h3>
@@ -129,16 +130,17 @@ export default function Page() {
             <div className="p-6 flex-grow">
               <a
                 href="/shop"
-                className="flex justify-center items-center group hover:text-green-500"
+                className="flex justify-center items-center bg-green-500 text-white rounded-lg py-3 px-6 transition-all duration-300 group hover:bg-green-600 hover:shadow-lg"
               >
                 <ShoppingCartIcon
                   aria-hidden="true"
-                  className="h-8 w-8 text-gray-800 group-hover:text-green-500 transition-colors duration-300"
+                  className="h-8 w-8 text-white group-hover:text-white transition-colors duration-300"
                 />
-                <h2 className="text-3xl font-bold text-center pl-4  text-gray-800 group-hover:text-green-500 transition-colors duration-300">
+                <h2 className="text-2xl font-bold text-center pl-2 group-hover:text-white transition-colors duration-300">
                   Autoteile
                 </h2>
               </a>
+
               <h3 className="mt-4 text-xl font-bold text-center text-gray-800">
                 Qualität zum günstigen Preis!
               </h3>
@@ -179,13 +181,13 @@ export default function Page() {
             <div className="p-6 flex-grow">
               <a
                 href="/carsdismanting"
-                className="flex justify-center items-center group hover:text-green-500"
+                className="flex justify-center items-center bg-green-500 text-white rounded-lg py-3 px-6 transition-all duration-300 group hover:bg-green-600 hover:shadow-lg"
               >
                 <WrenchScrewdriverIcon
                   aria-hidden="true"
-                  className="h-8 w-8 text-gray-800 group-hover:text-green-500 transition-colors duration-300"
+                  className="h-8 w-8 text-white group-hover:text-white transition-colors duration-300"
                 />
-                <h2 className="text-3xl font-bold text-center pl-4  text-gray-800 group-hover:text-green-500 transition-colors duration-300">
+                <h2 className="text-2xl font-bold text-center pl-2 group-hover:text-white transition-colors duration-300">
                   Autoschrottplatz
                 </h2>
               </a>

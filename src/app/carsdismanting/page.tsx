@@ -1,3 +1,5 @@
+import { ShoppingCartIcon } from '@heroicons/react/24/outline';
+
 export default function Carsdismanting() {
   return (
     <main>
@@ -18,8 +20,17 @@ export default function Carsdismanting() {
                 Autoschrottplatz
               </h1>
               <p className="text-white pt-10">
-                Die Seite befindet sich derzeit in Entwicklung
+                Die Seite wird aktuell überarbeitet. Besuchen Sie unser
+                Kleinanzeigen-Profil, um alle Angebote zu entdecken.
               </p>
+              <a
+                href="https://www.kleinanzeigen.de/s-anzeige/hobbywerkstatt-kfz-mietwerkstatt-hebebuehne-kran-reparatur/2379287664-280-1988"
+                target="_blank"
+                className="text-xl text-green-500 flex justify-center pt-10 hover:text-green-700"
+              >
+                <ShoppingCartIcon aria-hidden="true" className="h-6 w-6" />
+                <span className="pl-4">Kleinanzeigen</span>
+              </a>
             </div>
           </div>
         </div>

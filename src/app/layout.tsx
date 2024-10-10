@@ -1,10 +1,9 @@
 import React from 'react';
 import '@/app/globals.css';
-import { roboto } from '@/app/ui/fonts';
+import { rubic, roboto, montserrat } from '@/app/ui/fonts';
 import Script from 'next/script';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import Example from './components/Example';
 
 export default function RootLayout({
   children,
@@ -42,7 +41,7 @@ export default function RootLayout({
         <meta property="og:url" content="https://i-motors-werk.de/" />
         <meta name="twitter:card" content="summary_large_image" />
       </head>
-      <body>
+      <body className={montserrat.className}>
         <div>
           <Header />
           {children}
