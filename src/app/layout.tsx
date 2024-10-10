@@ -20,7 +20,6 @@ export default function RootLayout({
           type="image/<generated>"
           sizes="<generated>"
         />
-
         <title>I-MOTORS | Mietwerkstatt und Autoteile in Recklinghausen</title>
         <link rel="canonical" href="https://i-motors-werk.de/" />
         <meta

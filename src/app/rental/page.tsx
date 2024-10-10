@@ -1,6 +1,22 @@
 'use client';
 import SlideshowOne from '../components/SlideshowOne';
 import SlideshowTwo from '../components/SlideshowTwo';
+import {
+  LockOpenIcon,
+  LockClosedIcon,
+  WrenchIcon,
+  CurrencyEuroIcon,
+} from '@heroicons/react/24/outline';
+
+const listIcon = (
+  <WrenchIcon aria-hidden="true" className="h-6 w-6 text-green-500" />
+);
+
+const listIcon2 = (
+  <CurrencyEuroIcon aria-hidden="true" className="h-6 w-6 text-green-500" />
+);
+
+const listElementStyle = 'flex items-center gap-4';
 
 export default function Rental() {
   return (
@@ -17,9 +33,15 @@ export default function Rental() {
           <div className="w-full lg:w-1/2 bg-white px-6 lg:px-10 lg:pt-8">
             <div className="mx-auto max-w-lg lg:max-w-none py-12">
               <div className="text-center lg:text-left">
-                <h1 className="text-4xl font-bold tracking-tight text-gray-800 sm:text-6xl">
-                  i-Werkstatt
-                </h1>
+                <div className="flex">
+                  <WrenchIcon
+                    aria-hidden="true"
+                    className="h-12 w-12 text-gray-800"
+                  />
+                  <h1 className="text-4xl font-bold pl-4 tracking-tight text-gray-800 sm:text-6xl">
+                    i-werkstatt
+                  </h1>
+                </div>
                 <p className="text-green-500 text-2xl font-semibold pt-8">
                   Do It Yourself!
                 </p>
@@ -29,17 +51,27 @@ export default function Rental() {
                   reparieren. Wir bieten Ihnen:
                 </p>
                 <div className="text-left mt-8">
-                  <ul className="text-gray-600 text-lg font-semibold sm:text-xl list-disc list-inside space-y-3">
-                    <li>3 Hebebühnen (3.2 - 4.2 Tonnen)</li>
-                    <li>Schweißgerät</li>
-                    <li>Klimabefüllung</li>
-                    <li>Motorkran</li>
-                    <li>Getriebeheber</li>
-                    <li>Reifenmontagegerät</li>
-                    <li>Hallendeckenkran</li>
-                    <li>
-                      Vollausgestattete Werkzeugwagen je Bühne oder Platz (gegen
-                      Aufpreis)
+                  <ul className="text-gray-600 text-lg font-semibold sm:text-xl space-y-3">
+                    <li className={listElementStyle}>
+                      {listIcon}3 Hebebühnen (3.2 - 4.2 Tonnen)
+                    </li>
+                    <li className={listElementStyle}>{listIcon}Schweißgerät</li>
+                    <li className={listElementStyle}>
+                      {listIcon}Klimabefüllung
+                    </li>
+                    <li className={listElementStyle}>{listIcon}Motorkran</li>
+                    <li className={listElementStyle}>
+                      {listIcon}Getriebeheber
+                    </li>
+                    <li className={listElementStyle}>
+                      {listIcon}Reifenmontagegerät
+                    </li>
+                    <li className={listElementStyle}>
+                      {listIcon}Hallendeckenkran
+                    </li>
+                    <li className={listElementStyle}>
+                      {listIcon}
+                      Werkzeugwagen je Bühne
                     </li>
                   </ul>
                 </div>
@@ -72,38 +104,49 @@ export default function Rental() {
             <div className="mx-auto max-w-lg lg:max-w-none py-12 lg:py-32">
               <div className="text-center lg:text-left">
                 <p className="text-green-500 text-2xl font-semibold">Preise:</p>
-                <ul className="text-left mt-4 text-gray-600 text-lg sm:text-xl list-disc list-inside space-y-3">
-                  <li>
-                    <span className="text-gray-600 font-semibold">
-                      1 Stunde:
-                    </span>{' '}
-                    15,- €
+                <ul className="text-left mt-4 text-gray-600 text-lg sm:text-xl space-y-3">
+                  <li className={listElementStyle}>
+                    {listIcon2}
+                    <span className="font-semibold">1 Stunde:</span> 15,- €
                   </li>
-                  <li>
+                  <li className={listElementStyle}>
+                    {listIcon2}
                     <span className="text-gray-600 font-semibold">
                       Tagespreis:
                     </span>{' '}
-                    Auf Anfrage (nur an Werktagen)
+                    Auf Anfrage
                   </li>
                 </ul>
 
                 <p className="text-green-500 text-2xl font-semibold mt-12">
                   Öffnungszeiten:
                 </p>
-                <ul className="text-left mt-4 text-gray-600 text-lg sm:text-xl list-disc list-inside space-y-3">
-                  <li>
+                <ul className="text-left mt-4 text-gray-600 text-lg sm:text-xl space-y-3">
+                  <li className={listElementStyle}>
+                    <LockOpenIcon
+                      aria-hidden="true"
+                      className="h-6 w-6 text-green-500"
+                    />
                     <span className="text-gray-600 font-semibold">
                       Montag bis Freitag:
                     </span>{' '}
                     09:00 - 18:00 Uhr
                   </li>
-                  <li>
+                  <li className={listElementStyle}>
+                    <LockOpenIcon
+                      aria-hidden="true"
+                      className="h-6 w-6 text-green-500"
+                    />
                     <span className="text-gray-600 font-semibold">
                       Samstags:
                     </span>{' '}
                     09:00 - 15:00 Uhr
                   </li>
-                  <li>
+                  <li className={listElementStyle}>
+                    <LockClosedIcon
+                      aria-hidden="true"
+                      className="h-6 w-6 text-green-500"
+                    />
                     <span className="text-gray-600 font-semibold">
                       Sonntags & Feiertage:
                     </span>{' '}

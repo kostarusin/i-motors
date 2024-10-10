@@ -1,5 +1,10 @@
 import HomePageImages from './components/HomePageImages';
 import Image from 'next/image';
+import {
+  WrenchScrewdriverIcon,
+  WrenchIcon,
+  ShoppingCartIcon,
+} from '@heroicons/react/24/outline';
 
 export default function Page() {
   return (
@@ -14,11 +19,27 @@ export default function Page() {
         }}
       >
         <div className="absolute inset-0 bg-black opacity-65 z-10"></div>{' '}
-        <div className="relative z-20 flex flex-col items-center justify-center h-full">
+        <div className="relative z-20 flex flex-col items-center justify-center pt-32 sm:h-full">
           <div className="px-6 lg:px-8 text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-200 sm:text-8xl">
-              i-MOTORS
-            </h1>
+            <div className="flex justify-center">
+              <Image
+                src="/herologo.png"
+                alt="Logo"
+                width={100}
+                height={100}
+                className="hidden md:block"
+              />
+              <Image
+                src="/herologo.png"
+                alt="Logo"
+                width={32}
+                height={32}
+                className="md:hidden"
+              />
+              <h1 className="text-4xl pl-2 md:pl-8 font-bold tracking-tight text-gray-200 sm:text-8xl">
+                i-motors
+              </h1>
+            </div>
             <h2 className="pt-4 text-2xl font-bold tracking-tight text-gray-200 sm:text-4xl">
               Mietwerkstatt & Autoteile
             </h2>
@@ -55,9 +76,18 @@ export default function Page() {
               />
             </div>
             <div className="p-6 flex-grow">
-              <h2 className="text-3xl font-bold text-center text-gray-800">
-                Mietwerkstatt
-              </h2>
+              <a
+                href="/rental"
+                className="flex justify-center items-center group hover:text-green-500"
+              >
+                <WrenchIcon
+                  aria-hidden="true"
+                  className="h-8 w-8 text-gray-800 group-hover:text-green-500 transition-colors duration-300"
+                />
+                <h2 className="text-3xl font-bold text-center pl-4 text-gray-800 group-hover:text-green-500 transition-colors duration-300">
+                  Mietwerkstatt
+                </h2>
+              </a>
               <h3 className="mt-4 text-xl font-bold text-center text-gray-800">
                 Schrauben leicht gemacht!
               </h3>
@@ -76,7 +106,7 @@ export default function Page() {
               <a
                 href="/rental"
                 className="text-lg font-bold text-yellow-400 transition-all duration-500
-          hover:text-green-300 ease-in-out"
+          hover:text-green-500 ease-in-out"
               >
                 Erfahren mehr <span aria-hidden="true">→</span>
               </a>
@@ -97,9 +127,18 @@ export default function Page() {
               />
             </div>
             <div className="p-6 flex-grow">
-              <h2 className="text-3xl font-bold text-center text-gray-800">
-                Autoteile
-              </h2>
+              <a
+                href="/shop"
+                className="flex justify-center items-center group hover:text-green-500"
+              >
+                <ShoppingCartIcon
+                  aria-hidden="true"
+                  className="h-8 w-8 text-gray-800 group-hover:text-green-500 transition-colors duration-300"
+                />
+                <h2 className="text-3xl font-bold text-center pl-4  text-gray-800 group-hover:text-green-500 transition-colors duration-300">
+                  Autoteile
+                </h2>
+              </a>
               <h3 className="mt-4 text-xl font-bold text-center text-gray-800">
                 Qualität zum günstigen Preis!
               </h3>
@@ -117,7 +156,7 @@ export default function Page() {
               <a
                 href="/shop"
                 className="text-lg font-bold text-yellow-400 transition-all duration-500
-          hover:text-green-300 ease-in-out"
+          hover:text-green-500 ease-in-out"
               >
                 Erfahren mehr <span aria-hidden="true">→</span>
               </a>
@@ -138,9 +177,18 @@ export default function Page() {
               />
             </div>
             <div className="p-6 flex-grow">
-              <h2 className="text-3xl font-bold text-center text-gray-800">
-                Autoschrottplatz
-              </h2>
+              <a
+                href="/carsdismanting"
+                className="flex justify-center items-center group hover:text-green-500"
+              >
+                <WrenchScrewdriverIcon
+                  aria-hidden="true"
+                  className="h-8 w-8 text-gray-800 group-hover:text-green-500 transition-colors duration-300"
+                />
+                <h2 className="text-3xl font-bold text-center pl-4  text-gray-800 group-hover:text-green-500 transition-colors duration-300">
+                  Autoschrottplatz
+                </h2>
+              </a>
               <h3 className="mt-4 text-xl font-bold text-center text-gray-800">
                 Selbst finden, selbst abbauen!
               </h3>
@@ -159,7 +207,7 @@ export default function Page() {
               <a
                 href="/carsdismanting"
                 className="text-lg font-bold text-yellow-400 transition-all duration-500
-          hover:text-green-300 ease-in-out"
+          hover:text-green-500 ease-in-out"
               >
                 Erfahren mehr <span aria-hidden="true">→</span>
               </a>

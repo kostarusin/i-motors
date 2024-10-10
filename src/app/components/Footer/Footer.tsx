@@ -6,6 +6,7 @@ import {
   AtSymbolIcon,
   ChatBubbleLeftRightIcon,
   InformationCircleIcon,
+  ShoppingCartIcon,
 } from '@heroicons/react/24/outline';
 
 export interface FooterProps {}
@@ -100,10 +101,7 @@ const Footer: React.FC<FooterProps> = () => {
                   target="_blank"
                   className="flex justify-center md:justify-start"
                 >
-                  <InformationCircleIcon
-                    aria-hidden="true"
-                    className="h-6 w-6"
-                  />
+                  <ShoppingCartIcon aria-hidden="true" className="h-6 w-6" />
                   <span className="pl-4">Kleinanzeigen</span>
                 </a>
               </li>
