@@ -75,7 +75,7 @@ const Footer: React.FC<FooterProps> = () => {
                   <span className="pl-4">WhatsApp</span>
                 </a>
               </li>
-              <li className="pb-4 text-lg transition-colors duration-300 hover:text-yellow-400">
+              {/* <li className="pb-4 text-lg transition-colors duration-300 hover:text-yellow-400">
                 <a
                   href="mailto:info@i-motors-werk.de"
                   className="flex justify-center md:justify-start"
@@ -83,7 +83,7 @@ const Footer: React.FC<FooterProps> = () => {
                   <AtSymbolIcon aria-hidden="true" className="h-6 w-6" />
                   <span className="pl-4">info@i-motors-werk.de</span>
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -108,8 +108,18 @@ const Footer: React.FC<FooterProps> = () => {
         </div>
 
         {/* Footer Bottom */}
-        <div className="border-t border-gray-700 mt-8 pt-6 text-center">
-          <p>&copy; 2024 i-MOTORS. All rights reserved.</p>
+        <div className="border-t flex flex-col justify-center items-center border-gray-700 mt-8 pt-6">
+          <p className="pb-4">&copy; 2024 i-MOTORS. All rights reserved.</p>
+          <p className="pb-4">Entwickelt von Kostyantyn Tarusin</p>
+          <a
+            href="https://wa.me/380685878511"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex w-fit transition-colors duration-300 hover:text-yellow-400"
+          >
+            <span className="pr-4">Nachricht senden</span>
+            <ChatBubbleLeftRightIcon aria-hidden="true" className="h-6 w-6" />
+          </a>
         </div>
       </div>
     </footer>
