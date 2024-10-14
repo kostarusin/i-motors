@@ -1,4 +1,5 @@
 import React from 'react';
+
 import '@/app/globals.css';
 import { rubic, roboto, montserrat } from '@/app/ui/fonts';
 import Script from 'next/script';

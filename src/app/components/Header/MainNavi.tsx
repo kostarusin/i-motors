@@ -81,7 +81,7 @@ export default function Navi() {
         onClose={setMobileMenuOpen}
         className="lg:hidden"
       >
-        <DialogBackdrop className="fixed inset-0 bg-black/30" />
+        <DialogBackdrop className="fixed inset-0 bg-black/30 backdrop-blur-sm" />
         <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full bg-gray-200 px-6 py-6 sm:max-w-sm">
           <div className="flex items-center justify-between">
             <Link
