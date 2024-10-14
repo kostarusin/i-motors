@@ -7,7 +7,7 @@ import Drower from '../components/Drawer';
 export default function Shop() {
   return (
     <main className="px-6 py-12 bg-white">
-      {/* <p className="text-gray-600 font-semibold text-center py-10">
+      <p className="text-gray-600 font-semibold text-center py-10">
         Die Seite wird aktuell überarbeitet. Besuchen Sie unser
         Kleinanzeigen-Profil, um alle Angebote zu entdecken.
       </p>
@@ -18,13 +18,11 @@ export default function Shop() {
       >
         <ShoppingCartIcon aria-hidden="true" className="h-6 w-6" />
         <span className="pl-4">Kleinanzeigen</span>
-      </a> */}
+      </a>
 
       {/* <Drower /> */}
-      <div className="pb-12 items-center">
-        <ShopPageSearch />
-      </div>
-      <CardOfGoods />
+      <div className="pb-12 items-center">{/* <ShopPageSearch /> */}</div>
+      {/* <CardOfGoods /> */}
     </main>
   );
 }
