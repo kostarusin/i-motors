@@ -4,12 +4,7 @@ import {
   MagnifyingGlassCircleIcon,
 } from '@heroicons/react/24/outline';
 
-const inputNames: string[] = [
-  'Welches Teil suchen Sie?',
-  'Marke',
-  'Model',
-  'Baujahr',
-];
+const inputNames: string[] = ['Ersatzteil', 'Marke', 'Model', 'Baujahr'];
 
 const CataloguePageForm: React.FC = () => {
   return (
@@ -17,11 +12,27 @@ const CataloguePageForm: React.FC = () => {
       {inputNames.map((inputName: string) => (
         <div key={inputName} className="w-full max-w-sm min-w-[200px]">
           <div className="relative">
-            <input className="peer w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded-md px-3 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow" />
-            <label className="absolute cursor-text font-semibold text-gray-700 bg-white px-1 left-2.5 top-2.5 text-slate-400 text-sm transition-all transform origin-left peer-focus:-top-2 peer-focus:left-2.5 peer-focus:text-xs peer-focus:text-slate-400 peer-focus:scale-90">
+            <input
+              className="peer w-full bg-transparent placeholder-transparent text-gray-200 text-sm border border-slate-200 rounded-md px-3 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow"
+              placeholder=" " // Add a space to make sure the placeholder-shown works
+            />
+            <label
+              className="
+      absolute left-2.5 top-2.5 text-gray-200 text-sm px-1 transition-all transform origin-left 
+      peer-placeholder-shown:top-2.5 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-sm 
+      peer-focus:-top-3.5 peer-focus:left-2.5 peer-focus:text-xs peer-focus:text-gray-400 
+      peer:not(:placeholder-shown):-top-3.5 peer:not(:placeholder-shown):left-2.5 peer:not(:placeholder-shown):text-xs"
+            >
               {inputName}
             </label>
           </div>
+
+          {/* <div className="relative">
+            <input className="peer w-full bg-transparent placeholder:text-slate-400 text-gray-200 text-sm border border-slate-200 rounded-md px-3 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow" />
+            <label className="absolute cursor-text text-gray-200 px-1 left-2.5 top-2.5 text-slate-400 text-sm transition-all transform origin-left peer-focus:-top-4 peer-focus:left-2.5 peer-focus:text-xs peer-focus:text-slate-400 peer-focus:scale-90">
+              {inputName}
+            </label>
+          </div> */}
         </div>
       ))}
       <button
