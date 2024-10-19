@@ -17,7 +17,7 @@ const Example = () => {
           <p className="text-lg sm:text-xl text-gray-200 mb-8 text-center">
             Finden Sie noch heute die besten Teile für Ihr Auto!
           </p>
-          <div>
+          <div className="w-full">
             <SchopPageSearch />
           </div>
         </div>
