@@ -16,7 +16,7 @@ const CataloguePageForm: React.FC = () => {
           key={inputName}
           label={inputName}
           color="white"
-          className="w-60 md:w-72 lg:w-48 xl:w-56 2xl:w-64"
+          className="w-80 sm:w-60 md:w-72 lg:w-48 xl:w-56 2xl:w-64"
         />
       ))}
       <button
