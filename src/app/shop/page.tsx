@@ -18,7 +18,9 @@ export default function Shop() {
           <p className="text-lg sm:text-xl text-gray-200 mb-8 text-center">
             Finden Sie noch heute die besten Teile für Ihr Auto!
           </p>
-          {/* <SchopPageSearch /> */}
+          <div className="hidden 2xl:block">
+            <SchopPageSearch />
+          </div>
         </div>
       </section>
 

@@ -24,7 +24,7 @@ const CataloguePageForm: React.FC = () => {
         className="w-1/4 sm:w-1/2 lg:w-1/4 sm:col-span-2 lg:col-span-4 xl:w-32 h-full mx-auto xl:mt-auto bg-green-500 shadow-md rounded-lg
   transition-colors duration-300 hover:bg-green-600 focus:outline-none flex items-center justify-center"
       >
-        <MagnifyingGlassIcon className="aria-hidden=true h-8 w-8 text-white" />
+        <MagnifyingGlassIcon className="aria-hidden=true h-8 w-8 text-white py-2" />
       </button>
     </form>
   );

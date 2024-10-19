@@ -2,7 +2,7 @@
 import CardOfGoods from '../components/CardOfGoods';
 import SchopPageSearch from '../components/ShopPageSearch';
 
-const MainPage = () => {
+const Example = () => {
   return (
     <main className="min-h-screen bg-gray-50">
       {/* Hero section or banner */}
@@ -29,4 +29,4 @@ const MainPage = () => {
   );
 };
 
-export default MainPage;
+export default Example;
