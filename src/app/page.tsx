@@ -28,16 +28,9 @@ export default function Page() {
                 alt="Logo"
                 width={100}
                 height={100}
-                className="hidden md:block"
+                className="w-10 h-10 sm:w-16 sm:h-16 lg:w-24 lg:h-24"
               />
-              <Image
-                src="/herologo.png"
-                alt="Logo"
-                width={32}
-                height={32}
-                className="md:hidden"
-              />
-              <h1 className="text-4xl pl-2 md:pl-8 font-bold tracking-tight text-gray-200 sm:text-8xl">
+              <h1 className="text-4xl pl-2 md:pl-8 font-bold tracking-tight text-gray-200 sm:text-6xl lg:text-8xl">
                 i-motors
               </h1>
             </div>

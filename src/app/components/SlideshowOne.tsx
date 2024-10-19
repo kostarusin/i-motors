@@ -31,8 +31,9 @@ const SlideshowOne: React.FC = () => {
           <Image
             src={src}
             alt={`Slideshow image ${index + 1}`}
-            layout="fill"
-            objectFit="cover"
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            style={{ objectFit: 'cover' }}
             className="w-full h-full"
           />
         </div>

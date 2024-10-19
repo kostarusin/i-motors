@@ -1,40 +1,45 @@
+'use client';
 import { ShoppingCartIcon } from '@heroicons/react/24/outline';
+import CardOfGoods from '../components/CardOfGoods';
+import SchopPageSearch from '../components/ShopPageSearch';
 
 export default function Shop() {
   return (
-    <main>
-      <div
-        className="relative isolate px-6 lg:px-8 "
+    <main className="min-h-screen bg-gray-50">
+      {/* Hero section or banner */}
+      <section
+        className="relative isolate px-6 py-6 lg:px-6 bg-no-repeat bg-cover bg-center h-auto"
         style={{
           backgroundImage: "url('/auto-repair-shop-1954636.jpg')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          height: '100vh', // Adjust the height as needed
         }}
       >
-        <div className="absolute inset-0 bg-black opacity-60 z-10"></div>
-        <div className="relative z-20 isolate px-6 pt-14 lg:px-8">
-          <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-            <div className="text-center">
-              <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-                Auoteile
-              </h1>
-              <p className="text-white pt-10">
-                Die Seite wird aktuell überarbeitet. Besuchen Sie unser
-                Kleinanzeigen-Profil, um alle Angebote zu entdecken.
-              </p>
-              <a
-                href="https://www.kleinanzeigen.de/s-anzeige/hobbywerkstatt-kfz-mietwerkstatt-hebebuehne-kran-reparatur/2379287664-280-1988"
-                target="_blank"
-                className="text-xl text-green-500 flex justify-center pt-10 hover:text-green-700"
-              >
-                <ShoppingCartIcon aria-hidden="true" className="h-6 w-6" />
-                <span className="pl-4">Kleinanzeigen</span>
-              </a>
-            </div>
-          </div>
+        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div className="relative z-10 flex flex-col items-center justify-center h-full">
+          <p className="text-lg sm:text-xl text-gray-200 mb-8 text-center">
+            Finden Sie noch heute die besten Teile für Ihr Auto!
+          </p>
+          <SchopPageSearch />
         </div>
-      </div>
+      </section>
+
+      {/* Product Grid Section */}
+      <section className="mx-auto px-6 py-12">
+        <div className="flex flex-col items-center">
+          <p className="text-gray-800 text-center">
+            Die Seite wird aktuell überarbeitet. Besuchen Sie unser
+            Kleinanzeigen-Profil, um alle Angebote zu entdecken.
+          </p>
+          <a
+            href="https://www.kleinanzeigen.de/s-anzeige/hobbywerkstatt-kfz-mietwerkstatt-hebebuehne-kran-reparatur/2379287664-280-1988"
+            target="_blank"
+            className="text-xl mb-4 text-green-500 w-56 flex justify-center pt-10 hover:text-green-700"
+          >
+            <ShoppingCartIcon aria-hidden="true" className="h-6 w-6" />
+            <span className="pl-4">Kleinanzeigen</span>
+          </a>
+        </div>
+        <CardOfGoods />
+      </section>
     </main>
   );
 }

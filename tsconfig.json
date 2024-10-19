@@ -26,7 +26,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/app/components/SearchInput.tsx"
+    "src/app/components/SearchInput.tsx",
+    "src/app/components/CustomInput.tsx"
   ],
   "exclude": ["node_modules"]
 }

@@ -19,8 +19,9 @@ const HomePageImages: React.FC = () => {
           <Image
             src={src}
             alt={`Slideshow image ${index + 1}`}
-            layout="fill"
-            objectFit="cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            fill
+            style={{ objectFit: 'cover' }}
             className="rounded-xl shadow-xl"
           />
         </div>
