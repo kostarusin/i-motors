@@ -9,7 +9,7 @@ const inputNames: string[] = ['Ersatzteil', 'Marke', 'Model', 'Baujahr'];
 
 const CataloguePageForm: React.FC = () => {
   return (
-    <form className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-flow-col mx-6">
+    <form className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-flow-col mx-6 gap-4">
       {inputNames.map((inputName: string) => (
         <Input
           {...({} as any)}
