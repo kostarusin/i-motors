@@ -116,6 +116,19 @@ export default function Rental() {
                     </span>{' '}
                     Auf Anfrage
                   </li>
+                  <li className={listElementStyle}>
+                    {listIcon2}
+                    <span className="text-gray-600 font-semibold">
+                      wichtiger Hinweis:
+                    </span>{' '}
+                  </li>
+                  <li className="ml-9 text-gray-600 text-sm sm:text-base leading-snug border-l-4 border-green-500 pl-3">
+                    Wenn der gemietete Platz für die Hebebühnen dreckig
+                    hinterlassen wird, z.B. durch Öl oder andere Flüssigkeiten,
+                    berechnen wir eine Reinigungsgebühr von{' '}
+                    <span className="font-semibold text-green-500">15 €</span>.
+                    Wir bitten um Ihr Verständnis.
+                  </li>
                 </ul>
 
                 <p className="text-green-500 text-2xl font-semibold mt-12">
