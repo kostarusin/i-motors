@@ -107,7 +107,7 @@ export default function Rental() {
                 <ul className="text-left mt-4 text-gray-600 text-lg sm:text-xl space-y-3">
                   <li className={listElementStyle}>
                     {listIcon2}
-                    <span className="font-semibold">1 Stunde:</span> 15,- €
+                    <span className="font-semibold">1 Stunde:</span> 20,- €
                   </li>
                   <li className={listElementStyle}>
                     {listIcon2}
