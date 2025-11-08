@@ -66,7 +66,7 @@ const Footer: React.FC<FooterProps> = () => {
                 >
                   <div className="flex items-center gap-2">
                     <PhoneIcon aria-hidden="true" className="h-6 w-6" />
-                    <p>RUS</p>
+                    <p>Говорим на русском</p>
                   </div>
                   <span className="pl-4">+49 163 60-91-413</span>
                 </a>
