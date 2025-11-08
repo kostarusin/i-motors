@@ -41,6 +41,9 @@ export default function Page() {
               Alles für dein Auto in Stadt Recklinghausen - Mietwerkstatt,
               Werkzeuge, Teile, und aus einer Hand!
             </p>
+            <p className="mt-6 text-2xl leading-8 text-red-500">
+              Теперь говорим и по русски!
+            </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#information"
