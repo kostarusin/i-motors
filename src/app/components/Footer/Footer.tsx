@@ -64,8 +64,11 @@ const Footer: React.FC<FooterProps> = () => {
                   href="tel:+491782362609"
                   className="flex justify-center md:justify-start"
                 >
-                  <PhoneIcon aria-hidden="true" className="h-6 w-6" />
-                  <span className="pl-4">+49 178 236-26-09</span>
+                  <div className="flex items-center gap-2">
+                    <PhoneIcon aria-hidden="true" className="h-6 w-6" />
+                    <p>RUS</p>
+                  </div>
+                  <span className="pl-4">+49 163 60-91-413</span>
                 </a>
               </li>
 
