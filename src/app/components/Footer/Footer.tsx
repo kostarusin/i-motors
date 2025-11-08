@@ -59,6 +59,15 @@ const Footer: React.FC<FooterProps> = () => {
                   <span className="pl-4">+49 178 236-26-09</span>
                 </a>
               </li>
+              <li className="pb-4 text-lg transition-colors duration-300 hover:text-yellow-400">
+                <a
+                  href="tel:+491782362609"
+                  className="flex justify-center md:justify-start"
+                >
+                  <PhoneIcon aria-hidden="true" className="h-6 w-6" />
+                  <span className="pl-4">+49 178 236-26-09</span>
+                </a>
+              </li>
 
               <li className="pb-4 text-lg transition-colors duration-300 hover:text-yellow-400">
                 <a
